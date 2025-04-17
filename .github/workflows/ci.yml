@@ -29,6 +29,9 @@ jobs:
       - name: check current directory
         run: ls
 
+      - name: Terraform init
+        run: terraform init
+
       - name: Terraform fmt
         id: fmt
         run: terraform fmt -check
